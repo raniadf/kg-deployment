@@ -10,6 +10,9 @@ COPY requirements.txt .
 # Install the dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Download the default English model for spaCy
+RUN python -m spacy download en
+
 # Copy the application code into the container
 COPY . .
 

@@ -7,6 +7,9 @@ from randomWalk.kgEmbedding import kgEmbedding
 from semanticSimilarity.semanticSimilarityRecommender import SemanticSimilarityRecommender
 
 import json
+import nltk
+
+
 
 app = Flask(__name__)
 CORS(app, support_credentials=True, resources={r"*": {"origins": "*"}})
@@ -59,4 +62,8 @@ def recommend_courses():
         return response
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    nltk.download('stopwords')
+    nltk.download('punkt')
+    nltk.download('wordnet')
+    nltk.download('omw-1.4')
+    app.run(debug=True, port=8080)
