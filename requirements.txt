@@ -1,1 +1,13 @@
-pandas
+Flask==3.0.3
+Flask_Cors==4.0.0
+matplotlib==3.7.1
+neo4j==5.19.0
+networkx==3.1
+nltk==3.8.1
+numpy==1.26.4
+plotly==5.22.0
+pykeen==1.10.2
+python-dotenv==1.0.1
+pyvis==0.3.2
+scipy==1.13.1
+spacy==3.6.1
