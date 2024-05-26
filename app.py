@@ -66,4 +66,4 @@ if __name__ == '__main__':
     nltk.download('punkt')
     nltk.download('wordnet')
     nltk.download('omw-1.4')
-    app.run(debug=True, port=8080)
+    app.run(debug = True, host='0.0.0.0', port=8080)
